@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task32", "Task32.csproj", "{B44D1732-FCD5-4058-97B1-865F0B65C977}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homewok2", "..\Task33\homewok2.csproj", "{3CF87A89-2809-4219-83CB-9C2D21FB5FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B44D1732-FCD5-4058-97B1-865F0B65C977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B44D1732-FCD5-4058-97B1-865F0B65C977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B44D1732-FCD5-4058-97B1-865F0B65C977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF87A89-2809-4219-83CB-9C2D21FB5FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF87A89-2809-4219-83CB-9C2D21FB5FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF87A89-2809-4219-83CB-9C2D21FB5FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF87A89-2809-4219-83CB-9C2D21FB5FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
