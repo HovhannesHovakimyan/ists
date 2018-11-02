@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2Summary", "Lesson2Summary.csproj", "{B44D1732-FCD5-4058-97B1-865F0B65C977}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task32", "Task32.csproj", "{B44D1732-FCD5-4058-97B1-865F0B65C977}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
