@@ -30,6 +30,7 @@ namespace OOP
         static void Main(string[] args)
         {
             Human mard1 = new Human();
+            Console.WriteLine("Enter you age:");
             mard1.Age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"My age is {mard1.Age}");
