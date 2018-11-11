@@ -68,7 +68,7 @@ namespace OOP___Inheritance
 
             Console.WriteLine(mard1.name);
             Console.WriteLine(mard1.sex);
-            Console.WriteLine($"{mard1.gradus}% tnakan qashac pshenichni arax");
+            Console.WriteLine($"{mard1.gradus}% lus-astx oxi");
 
             mard1.SayBarlusner();
 
