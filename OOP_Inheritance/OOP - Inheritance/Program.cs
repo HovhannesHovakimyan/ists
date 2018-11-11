@@ -36,6 +36,7 @@ namespace OOP___Inheritance
     class Alkash : Human
     {
         public int gradus { get; set; }
+
         protected void Oyaxnal()
         {
             Console.WriteLine("Gorci gnal ka ban ka... Knik spasi heto");
@@ -92,6 +93,7 @@ namespace OOP___Inheritance
             mard2.BujieqIndz();
 
 
+
             //converting object instance type
             Human mard = mard1; // this is called UPCAST, converting concrete type to general
 
@@ -100,7 +102,39 @@ namespace OOP___Inheritance
 
             mard.sayHello();
 
-            Console.ReadKey();
+
+
+            //DOWNCAST, converting general to concrete type
+            bool isAlkash = mard1 is Alkash;
+
+            if (isAlkash)
+            {
+                Alkash mard3 = (Alkash)mard1;
+
+                Console.WriteLine($"\n{mard3.name}");
+                Console.WriteLine(mard3.sex);
+                Console.WriteLine($"{mard3.gradus}% tnakan qashac pshenichni arax");
+
+                mard3.sayHello();
+                mard3.SayBarlusner();
+            }
+
+
+
+            Alkash mard4 = mard as Alkash;
+
+            if (mard4 != null)
+            {
+                Console.WriteLine("\n");
+                Console.WriteLine(mard4.name);
+                Console.WriteLine(mard4.sex);
+                Console.WriteLine($"{mard4.gradus}% tnakan qashac pshenichni arax");
+
+                mard4.sayHello();
+                mard4.SayBarlusner();
+            }
+
+                Console.ReadKey();
         }
     }
 }
