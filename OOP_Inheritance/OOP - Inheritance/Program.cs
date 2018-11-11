@@ -93,7 +93,7 @@ namespace OOP___Inheritance
 
 
             //converting object instance type
-            Human mard = mard1;
+            Human mard = mard1; // this is called UPCAST, converting concrete type to general
 
             Console.WriteLine($"\n{mard.name}");
             Console.WriteLine(mard.sex);
