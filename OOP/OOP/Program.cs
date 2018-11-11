@@ -18,7 +18,7 @@ namespace OOP
             }
             set
             {
-                if (age > 0)
+                if (value > 0)
                 {
                     age = value;
                 }
@@ -29,11 +29,20 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Human mard1 = new Human();
-            Console.WriteLine("Enter you age:");
-            mard1.Age = Convert.ToInt32(Console.ReadLine());
+            Human mard1 = new Human
+            {
+                Age = 30
+            };
 
-            Console.WriteLine($"My age is {mard1.Age}");
+            Printmethod(mard1);
+        }
+
+        static void Printmethod(Human mard1)
+        {
+            int age = mard1.Age;
+
+            Console.WriteLine($"my age is {age}");
+            Console.ReadKey();
         }
     }
 }
