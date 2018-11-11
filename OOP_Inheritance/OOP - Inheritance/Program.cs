@@ -36,10 +36,22 @@ namespace OOP___Inheritance
     class Alkash : Human
     {
         public int gradus { get; set; }
+        protected void Oyaxnal()
+        {
+            Console.WriteLine("Gorci gnal ka ban ka... Knik spasi heto");
+        }
 
-        public void sayBarlusner()
+        public void SayBarlusner()
         {
             Console.WriteLine("Bayylusner boooloriin");
+        }
+    }
+
+    class UltraAlkash : Alkash
+    {
+        public void BujieqIndz()
+        {
+            Console.WriteLine("chay tveq, mernum em!");
         }
     }
 
@@ -50,13 +62,29 @@ namespace OOP___Inheritance
             Alkash mard1 = new Alkash
             {
                 name = "Valodik",
-                sex = "male"
+                sex = "male",
+                gradus = 40
             };
 
             Console.WriteLine(mard1.name);
             Console.WriteLine(mard1.sex);
+            Console.WriteLine($"{mard1.gradus}% tnakan qashac pshenichni arax");
 
-            mard1.sayBarlusner();
+            mard1.SayBarlusner();
+
+
+            UltraAlkash mard2 = new UltraAlkash
+            {
+                name = "Saqulik",
+                sex = "male",
+                gradus = 80
+            };
+
+            Console.WriteLine($"\n{mard2.name}");
+            Console.WriteLine(mard2.sex);
+            Console.WriteLine($"{mard2.gradus}% tnakan qashac pshenichni arax");
+            mard2.SayBarlusner();
+            mard2.BujieqIndz();
 
             Console.ReadKey();
         }
