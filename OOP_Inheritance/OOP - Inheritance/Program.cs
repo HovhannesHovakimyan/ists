@@ -95,6 +95,8 @@ namespace OOP___Inheritance
 
 
             //converting object instance type
+            //every alkash is human, but not every human can be alkash (see DOWNCAST!)
+
             Human mard = mard1; // this is called UPCAST, converting concrete type to general
 
             Console.WriteLine($"\n{mard.name}");
@@ -105,11 +107,11 @@ namespace OOP___Inheritance
 
 
             //DOWNCAST, converting general to concrete type
-            bool isAlkash = mard1 is Alkash;
+            bool isAlkash = mard is Alkash;
 
             if (isAlkash)
             {
-                Alkash mard3 = (Alkash)mard1;
+                Alkash mard3 = (Alkash)mard; // mard karoxacanq Alkash darcnel, vorovhetev na inch vor jamanak araj arden exel er Alkash
 
                 Console.WriteLine($"\n{mard3.name}");
                 Console.WriteLine(mard3.sex);
