@@ -53,6 +53,11 @@ namespace OOP___Inheritance
         {
             Console.WriteLine("chay tveq, mernum em!");
         }
+
+        public void SayBarlusner()
+        {
+            Console.WriteLine("prrrrivet. buuuuu araaaa");
+        }
     }
 
     class Program
