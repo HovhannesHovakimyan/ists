@@ -91,6 +91,15 @@ namespace OOP___Inheritance
             mard2.SayBarlusner();
             mard2.BujieqIndz();
 
+
+            //converting object instance type
+            Human mard = mard1;
+
+            Console.WriteLine($"\n{mard.name}");
+            Console.WriteLine(mard.sex);
+
+            mard.sayHello();
+
             Console.ReadKey();
         }
     }
