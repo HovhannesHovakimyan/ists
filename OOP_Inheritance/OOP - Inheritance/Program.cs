@@ -125,7 +125,7 @@ namespace OOP___Inheritance
 
             Alkash mard4 = mard as Alkash;
 
-            if (mard4 != null)
+            if (mard4 != null) // petqa stugel, qani vor ete mard Alkashi het voreve kap chuni, mard4 mej null a pahelu ayd depqum
             {
                 Console.WriteLine("\n");
                 Console.WriteLine(mard4.name);
@@ -134,6 +134,14 @@ namespace OOP___Inheritance
 
                 mard4.sayHello();
                 mard4.SayBarlusner();
+            }
+
+
+            // Starting from C# 7.0 and in VS 2017, latest way to do DOWNCAST
+            if (mard is Alkash mard5)
+            {
+                Console.WriteLine("\n");
+                mard5.SayBarlusner();
             }
 
                 Console.ReadKey();
