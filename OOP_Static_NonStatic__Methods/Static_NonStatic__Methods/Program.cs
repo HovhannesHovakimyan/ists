@@ -28,6 +28,8 @@ namespace Static_NonStatic__Methods
         {
             Person person = new Person("Testik", "Testikyan");
 
+            Console.WriteLine(Person.FormatFullName("Testik", "Testikyan"));
+
             Console.ReadKey();
         }
     }
