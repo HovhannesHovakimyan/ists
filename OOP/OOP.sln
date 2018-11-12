@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "..\OOP_Poly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "This_and_Base", "..\OOP_this_base\This_and_Base\This_and_Base.csproj", "{039931AE-BA3C-4C9A-B75D-13B1F7B6104E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors_Overload", "..\OOP_Constructors_Overload\Constructors_Overload\Constructors_Overload.csproj", "{EFE5E708-10DD-422B-9234-CF2B6F11B602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{039931AE-BA3C-4C9A-B75D-13B1F7B6104E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{039931AE-BA3C-4C9A-B75D-13B1F7B6104E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{039931AE-BA3C-4C9A-B75D-13B1F7B6104E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE5E708-10DD-422B-9234-CF2B6F11B602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE5E708-10DD-422B-9234-CF2B6F11B602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE5E708-10DD-422B-9234-CF2B6F11B602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE5E708-10DD-422B-9234-CF2B6F11B602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

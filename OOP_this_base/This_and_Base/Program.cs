@@ -20,6 +20,8 @@ namespace This_and_Base
             ChangeID(book);
 
             Console.WriteLine(book.ID);
+
+            Console.ReadKey();
         }
 
         static void ChangeID(Book book)
