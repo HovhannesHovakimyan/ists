@@ -15,6 +15,8 @@ namespace Static_NonStatic__Methods
         {
             FirstName = argFirstName;
             LastName = argFirstName;
+
+            //FormatFullName(FirstName, LastName); //also this can be done
         }
 
         public static string FormatFullName(string argFirstname, string argLastName)
