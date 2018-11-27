@@ -16,6 +16,15 @@ namespace Delegate
             Console.WriteLine("Hello");
         }
 
+        static int Add(int x, int y)
+        {
+            return x + y;
+        }
+        static int Multiply(int x, int y)
+        {
+            return x + y;
+        }
+
         static void Main(string[] args)
         {
             Message message; //delegate determines a type, so variable can be that type
@@ -25,6 +34,14 @@ namespace Delegate
 
             //message.Invoke();  //another way to call delegate
             message();
+
+            Operation operation = Add;
+            int result = operation.Invoke(4, 5);
+            Console.WriteLine(result);
+
+            operation = Multiply;
+            result = operation(4, 5);
+            Console.WriteLine(result);
 
             Console.ReadKey();
         }
