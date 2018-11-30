@@ -71,8 +71,8 @@ namespace Events
             account.Added += Display;
             account.Put(100);
 
-            account.Added -= Display;
-            account.Added += ColorDisplay;
+            account.Withdrawn -= Display;
+            account.Withdrawn += ColorDisplay;
             account.Withdraw(100);
 
             //account.UnRegisterHandler(Display);
@@ -81,8 +81,6 @@ namespace Events
 
             //account.RegisterHandler(Display);
             //account.UnRegisterHandler(ColorDisplay);
-            account.Added += Display;
-            account.Added -= ColorDisplay;
             account.Put(200);
 
             Console.ReadKey();
