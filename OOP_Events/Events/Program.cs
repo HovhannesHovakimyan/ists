@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Events
 {
-    delegate void AccountStateHandler(string message);
+    delegate void AccountStateHandler(object sender, AccountEventArgs e);
+
+    class AccountEventArgs
+    {
+        public string Message { get; }
+        public int Sum { get; }
+        public AccountEventArgs(string message, int sum)
+        {
+            Message = message;
+            Sum = sum;
+        }
+    }
 
     class Account
     {
@@ -32,34 +43,36 @@ namespace Events
         }
         public void Put(int sum)
         {
-            if (Adding != null) Adding($"{this.sum} amount of money is being added on your account");
+            if (Adding != null) Adding(this, new AccountEventArgs($"{this.sum} amount of money is being added on your account", sum));
             this.sum += sum;
-            if (Added != null) Added($"added {sum} amount of money on your account");
+            if (Added != null) Added(this, new AccountEventArgs($"added {sum} amount of money on your account", sum));
         }
         public void Withdraw(int sum)
         {
             if (this.sum >= sum)
             {
                 this.sum -= sum;
-                if (Withdrawn != null) Withdrawn($"withdrawed {sum} amount of money from your account");
+                if (Withdrawn != null) Withdrawn(this, new AccountEventArgs($"withdrawed {sum} amount of money from your account", sum));
             }
             else
             {
-                if (Withdrawn != null) Withdrawn($"not enough money on your account to withdraw amount of {sum}");
+                if (Withdrawn != null) Withdrawn(this, new AccountEventArgs($"not enough money on your account to withdraw amount of {sum}", sum));
             }
         }
     }
 
     class Program
     {
-        static void Display(string message)
+        static void Display(object sender, AccountEventArgs e)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"Amount of transaction: {e.Sum}");
+            Console.WriteLine(e.Message);
         }
-        static void ColorDisplay(string message)
+        static void ColorDisplay(object sender, AccountEventArgs e)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
+            Console.WriteLine($"Amount of transaction: {e.Sum}");
+            Console.WriteLine(e.Message);
             Console.ResetColor();
         }
 
