@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simple_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Simple Calculator - ISTC" Height="355" Width="245">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="194*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnPercent" Content="%" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnRoot" Content="√" HorizontalAlignment="Left" Margin="29.698,94,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1"/>
+        <Button x:Name="btnSquare" Content="X²" HorizontalAlignment="Left" Margin="82.698,94,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1"/>
+        <Button x:Name="btnBajanac" Content="1/X" HorizontalAlignment="Left" Margin="135.698,94,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1"/>
+        <Button x:Name="btnClearEntry" Content="CE" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2" Click="BtnClearEntry_Click"/>
+        <Button x:Name="btnClear" Content="C" HorizontalAlignment="Left" Margin="29.698,130,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnClear_Click"/>
+        <Button x:Name="btnDelete" Content="Del" HorizontalAlignment="Left" Margin="82.698,130,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnDelete_Click"/>
+        <Button x:Name="btnDivide" Content="÷" HorizontalAlignment="Left" Margin="135.698,130,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnDivide_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2" Click="Btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="29.698,166,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="82.698,166,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn9_Click"/>
+        <Button x:Name="btnTimes" Content="×" HorizontalAlignment="Left" Margin="135.698,166,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnTimes_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2" Click="Btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="29.698,202,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="82.698,202,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn6_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="135.698,202,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnMinus_Click"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2" Click="Btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="29.698,238,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="82.698,238,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn3_Click"/>
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="135.698,238,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnPlus_Click"/>
+        <Button x:Name="btnPositivenegative" Content="+-" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.ColumnSpan="2" Click="BtnPositivenegative_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="29.698,274,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="Btn0_Click"/>
+        <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="82.698,274,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1"/>
+        <Button x:Name="btnEquals" Content="=" HorizontalAlignment="Left" Margin="135.698,274,0,0" VerticalAlignment="Top" Width="48" Height="31" Grid.Column="1" Click="BtnEquals_Click"/>
+        <TextBox x:Name="txtDisplay" IsReadOnly="True" HorizontalAlignment="Left" Height="44" Margin="10,25,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2" FontSize="24" TextAlignment="Right" />
+
     </Grid>
 </Window>
