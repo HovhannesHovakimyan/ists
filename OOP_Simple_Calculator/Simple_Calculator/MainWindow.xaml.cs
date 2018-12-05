@@ -37,28 +37,26 @@ namespace Simple_Calculator
         {
             if (operation == "")
             {
-                txtDisplay.Text = "";
+                number1 = Convert.ToInt64(txtDisplay.Text);
                 number1 = (number1 * 10) + 1;
                 txtDisplay.Text = number1.ToString();
             }
             else
             {
-                txtDisplay.Text = "";
+                number2 = Convert.ToInt64(txtDisplay.Text);
                 number2 = (number2 * 10) + 1;
                 txtDisplay.Text = number2.ToString();
             }
         }
         private void Btn2_Click(object sender, RoutedEventArgs e)
         {
-            if (operation == "")
+            if (operation == "0")
             {
-                txtDisplay.Text = "";
                 number1 = (number1 * 10) + 2;
                 txtDisplay.Text = number1.ToString();
             }
             else
             {
-                txtDisplay.Text = "";
                 number2 = (number2 * 10) + 2;
                 txtDisplay.Text = number2.ToString();
             }
@@ -208,6 +206,10 @@ namespace Simple_Calculator
                     txtDisplay.Text = (number1 / number2).ToString();
                     break;
             }
+
+            operation = "";
+            number1 = 0;
+            number2 = 0;
         }
 
         private void BtnClearEntry_Click(object sender, RoutedEventArgs e)
