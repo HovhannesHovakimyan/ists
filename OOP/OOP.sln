@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple_Calculator", "..\OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeTempCode", "..\OOP_SomeTempCode\SomeTempCode\SomeTempCode.csproj", "{63374E47-B9A3-4941-9C2B-6EBD5DC521D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Ref", "..\OOP_Ref\OOP_Ref\OOP_Ref.csproj", "{5E629D69-624E-4FAC-B1FE-56B3B5C5E529}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{63374E47-B9A3-4941-9C2B-6EBD5DC521D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63374E47-B9A3-4941-9C2B-6EBD5DC521D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63374E47-B9A3-4941-9C2B-6EBD5DC521D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E629D69-624E-4FAC-B1FE-56B3B5C5E529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E629D69-624E-4FAC-B1FE-56B3B5C5E529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E629D69-624E-4FAC-B1FE-56B3B5C5E529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E629D69-624E-4FAC-B1FE-56B3B5C5E529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
