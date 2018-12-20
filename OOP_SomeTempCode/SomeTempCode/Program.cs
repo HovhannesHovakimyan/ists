@@ -29,16 +29,5 @@ namespace SomeTempCode
 
             Console.ReadKey();
         }
-        static ref int Find(int[] numbers, int number)
-        {
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                if (numbers[i] == number)
-                {
-                    return ref numbers[i];
-                }
-            }
-            throw new Exception("Number not found");
-        }
     }
 }
