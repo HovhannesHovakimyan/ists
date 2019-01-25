@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static", "..\OOP_Static\Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translit to Armenian Converter", "translit_Armenian_converter\Translit to Armenian Converter\Translit to Armenian Converter.csproj", "{568777AA-3BE4-4792-B1A6-03C49DB9CBC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection\Reflection.csproj", "{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{568777AA-3BE4-4792-B1A6-03C49DB9CBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{568777AA-3BE4-4792-B1A6-03C49DB9CBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{568777AA-3BE4-4792-B1A6-03C49DB9CBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{568777AA-3BE4-4792-B1A6-03C49DB9CBC8}</ProjectGuid>
+    <ProjectGuid>{C388E435-6B3E-42AC-AE20-DE0ADB626FFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Translit_to_Armenian_Converter</RootNamespace>
-    <AssemblyName>Translit to Armenian Converter</AssemblyName>
+    <RootNamespace>Reflection</RootNamespace>
+    <AssemblyName>Reflection</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transliteration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

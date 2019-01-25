@@ -4,28 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SomeTempCode
+namespace SoloLearn
 {
     class Program
     {
+        class SomeClass
+        {
+            public static int X { get; set; }
+            public static int Y { get; set; }
+            public readonly int Z;
+
+            static SomeClass()
+            {
+                X = 10;
+                Y = 20;
+            }
+
+            public SomeClass(int z)
+            {
+                Z = z;
+            }
+        }
         static void Main(string[] args)
         {
 
-            int x = 5;
-            ref int refOfX = ref x;
+            SomeClass.X = 17;
 
-            Console.WriteLine(x); // 5
-            Console.WriteLine(refOfX); // 5
+            Console.WriteLine(SomeClass.X);
+            SomeClass d = new SomeClass(89);
 
-            refOfX = 125;
-            Console.WriteLine(x); // 125
+            //d.Z = 73;
 
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
-            ref int nRef = ref Find(numbers, 4);
-            Console.WriteLine(numbers[3]); // 4
-
-            nRef = 45;
-            Console.WriteLine(numbers[3]); // 45
+            Console.WriteLine(d.Z);
 
             Console.ReadKey();
         }
